@@ -1,0 +1,68 @@
+.about-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.education-section {
+  margin-top: 40px;
+}
+
+.education-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.education-card {
+  border-left: 4px solid #007bff;
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.education-card:hover {
+  background-color: #eef6ff;
+}
+
+.education-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.education-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-section {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

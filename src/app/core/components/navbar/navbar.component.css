@@ -1,0 +1,38 @@
+.navbar {
+  background: linear-gradient(90deg, #0B1221, #0E244A);
+  color: #fff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    .accent { color: #00bfa6; }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+
+      &:hover,
+      &.active {
+        opacity: 0.8;
+        border-bottom: 2px solid #00bfa6;
+      }
+    }
+  }
+}
+.accent{
+
+  margin-left: 10px;
+}

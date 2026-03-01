@@ -1,0 +1,16 @@
+<section class="skills">
+  <h2>My Skills</h2>
+  <div class="skill-grid">
+    @for (item of skills; track item.category) {
+      <div class="skill-card">
+        <h3>{{ item.category }}</h3>
+        <p>{{ item.items }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<i class="fa-brands fa-angular"></i>
+<i class="fa-solid fa-database"></i>
+<i class="fa-brands fa-microsoft"></i>
+<i class="fa-brands fa-aws"></i>

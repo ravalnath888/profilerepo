@@ -1,0 +1,48 @@
+<section class="certifications-section">
+  <h2>Certifications</h2>
+  <div class="cert-card">
+    <div class="cert-info">
+      <h3>Full Stack Development in .NET</h3>
+      <p>Palle Technologies, Bangalore</p>
+      <p class="desc">
+      Built end-to-end web applications using ASP.NET Core, C#, Angular, and SQL Server with strong focus on scalable API design.
+    </p>
+    </div>
+    <button class="view-btn" (click)="openModal('dotnet')">View Certificate</button>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-info">
+      <h3>DevOps Essentials Certification</h3>
+      <p>TuteDude</p>
+          <p class="desc">
+      Hands-on experience with CI/CD pipelines, Docker, Kubernetes, and AWS services for automated deployment and cloud scalability.
+    </p>
+    </div>
+    <button class="view-btn" (click)="openModal('devops')">View Certificate</button>
+  </div>
+
+
+  <!-- Modal Popup -->
+  @if (showModal) {
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close" (click)="closeModal()" aria-label="Close modal">&times;</button>
+
+        @if (selectedCert === 'dotnet') {
+          <div>
+            <h3>Full Stack Development in .NET</h3>
+            <img src="assets/images/dotnet-cert.png" alt=".NET Certificate" />
+          </div>
+        }
+
+        @if (selectedCert === 'devops') {
+          <div>
+            <h3>DevOps Essentials Certification</h3>
+            <img src="assets/images/dotnet-cert.png" alt="DevOps Certificate" />
+          </div>
+        }
+      </div>
+    </div>
+  }
+</section>

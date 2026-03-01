@@ -1,0 +1,37 @@
+<!-- HERO SECTION -->
+<section class="hero">
+ <div class="hero-content">
+  <img src="assets/images/profile.jpeg" alt="Ravalnath" class="profile-img" />
+  <div class="hero-text">
+    <h1>Hi, I'm Ravalnath 👋</h1>
+    <h2 class="tagline">Software Developer | .NET | Angular | DevOps Enthusiast</h2>
+    <p>
+      Detail-oriented <span class="highlight">Software Developer I</span> with 2 years of experience in designing, developing, and maintaining
+      web applications using <span class="highlight">ASP.NET Core Web API</span>, <span class="highlight">Angular</span>, 
+      <span class="highlight">TypeScript</span>, and <span class="highlight">SQL Server</span>. 
+      Proficient in <span class="highlight">ADO.NET, Entity Framework, LINQ, and MVC architecture.</span> 
+      Strong analytical and debugging skills with a passion for building efficient, scalable, and user-friendly applications.
+    </p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:banoshiravalnath@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="projects">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+    <app-project-card
+      *ngFor="let project of projects"
+      [project]="project">
+    </app-project-card>
+  </div>
+</section>
+<!-- SKILLS -->
+<section class="skills">
+  <app-skills></app-skills>
+</section>
