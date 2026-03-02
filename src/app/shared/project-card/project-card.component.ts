@@ -19,7 +19,7 @@ export interface Project {
 export class ProjectCardComponent {
   // Receive data from parent component (like Home)
   //@Input() project!: Project;
-  @Input() project!: { title: string; tech: string; link?: string };
+  @Input() project!: { title: string; tech: string; link?: string; };
 
   // Optional: handle View Project click
   viewProject() {
@@ -29,4 +29,12 @@ export class ProjectCardComponent {
       alert('Project link not available!');
     }
   }
+   showAuthXPopup = false;
+openPopup() {
+  this.showAuthXPopup = true;
+}
+
+closePopup() {
+  this.showAuthXPopup = false;
+}
 }

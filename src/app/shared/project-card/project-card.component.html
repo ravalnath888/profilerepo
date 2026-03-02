@@ -1,6 +1,27 @@
 <div class="card">
-  <!-- <span class="highlight">Software Developer I</span> -->
   <h3><span class="highlight">{{ project.title }}</span></h3>
   <p>{{ project.tech }}</p>
-  <a href="{{ project.link }}">Know more</a>
+  <a href="{{ project.link }}">View more about Product</a>
+  <a (click)="openPopup()"> View contribution</a>
+  
+</div>
+
+<!-- AuthX Popup Modal -->
+<div class="modal-overlay" *ngIf="showAuthXPopup">
+  <div class="modal">
+    <span class="close-btn" (click)="closePopup()" (keydown.escape)="closePopup()">×</span>
+
+    <h2>AuthX – Enterprise IAM Platform</h2>
+
+    <ul>
+      <li>Developed backend services using ASP.NET Core Web API, EF Core & SQL Server</li>
+      <li>Implemented SSO, MFA & Passwordless Authentication</li>
+      <li>Contributed to Zero Trust Security (Token-based & Context-aware flows)</li>
+      <li>Optimized authentication workflows with risk-based checks</li>
+      <li>Implemented custom branding for enterprise clients</li>
+      <li>Working on AD Sync, LDAP Sync & SCIM integrations</li>
+      <li>Collaborated with Angular & TypeScript frontend team</li>
+      <li>Supported compliance & auditing features</li>
+    </ul>
+  </div>
 </div>
