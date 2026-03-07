@@ -4,13 +4,17 @@
     @for (item of skills; track item.category) {
       <div class="skill-card">
         <h3>{{ item.category }}</h3>
-        <p>{{ item.items }}</p>
+
+        <div class="skill-items">
+          @for (skill of item.items; track skill.name) {
+            <div class="skill-item">
+              <i [class]="skill.icon"></i>
+              <span>{{ skill.name }}</span>
+            </div>
+          }
+        </div>
+
       </div>
     }
   </div>
 </section>
-
-<i class="fa-brands fa-angular"></i>
-<i class="fa-solid fa-database"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-brands fa-aws"></i>

@@ -1,10 +1,19 @@
 <nav class="navbar">
   <div class="logo">
-    Ravalnath<span class="accent">Banoshi</span></div>
-  <ul class="nav-links">
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-    <li><a routerLink="/certifications" routerLinkActive="active">Certifications</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    Ravalnath<span class="accent">Banoshi</span>
+  </div>
+
+  <!-- Hamburger for Mobile -->
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+    <li><a routerLink="/certifications" routerLinkActive="active" (click)="closeMenu()">Certifications</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
   </ul>
 </nav>

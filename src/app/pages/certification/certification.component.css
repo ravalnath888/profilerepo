@@ -59,7 +59,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 900px;
   text-align: center;
   position: relative;
   animation: fadeIn 0.3s ease;
@@ -80,7 +80,28 @@
   cursor: pointer;
   color: #333;
 }
+.image-container {
+  overflow: auto;
+  text-align: center;
+  max-height: 70vh;
+}
 
+.zoom-image {
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.zoom-controls button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

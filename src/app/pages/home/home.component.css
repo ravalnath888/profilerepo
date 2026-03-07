@@ -91,6 +91,22 @@
 .social-links a:hover {
   color: #00d4b4;
 }
+.cv-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;   /* reduced padding */
+  font-size:14px;     /* smaller text */
+  background:#00d4a3;
+  color:#000;
+  border-radius:4px;
+  font-weight:500;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.cv-btn:hover{
+  background:#5cedd0;
+}
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column-reverse;

@@ -25,24 +25,50 @@
 
   <!-- Modal Popup -->
   @if (showModal) {
-    <div class="modal">
-      <div class="modal-content">
-        <button class="close" (click)="closeModal()" aria-label="Close modal">&times;</button>
+<div class="modal">
+  <div class="modal-content">
 
-        @if (selectedCert === 'dotnet') {
-          <div>
-            <h3>Full Stack Development in .NET</h3>
-            <img src="assets/images/dotnet-cert.png" alt=".NET Certificate" />
-          </div>
-        }
+    <button class="close" (click)="closeModal()" aria-label="Close modal">&times;</button>
 
-        @if (selectedCert === 'devops') {
-          <div>
-            <h3>DevOps Essentials Certification</h3>
-            <img src="assets/images/dotnet-cert.png" alt="DevOps Certificate" />
-          </div>
-        }
+    <div class="image-container">
+
+      @if (selectedCert === 'dotnet') {
+      <div>
+        <h3>Full Stack Development in .NET</h3>
+          <iframe title=".NET"
+          src="assets/certifications/dotnet-cert.pdf"
+          width="100%"
+          height="500px">
+        </iframe>
+
+        <div class="pdf-actions">
+          <a href="assets/certifications/dotnet-cert.pdf" target="_blank">Open Fullscreen</a>
+          <a href="assets/certifications/dotnet-cert.pdf" download>Download</a>
+        </div>
+
       </div>
+      }
+
+      @if (selectedCert === 'devops') {
+      <div>
+        <h3>DevOps Essentials Certification</h3>
+         <iframe title="DevOps"
+          src="assets/certifications/devops-cert.pdf"
+          width="100%"
+          height="500px">
+        </iframe>
+
+        <div class="pdf-actions">
+          <a href="assets/certifications/devops-cert.pdf" target="_blank">Open Fullscreen</a>
+          <a href="assets/certifications/devops-cert.pdf" download>Download</a>
+        </div>
+
+      </div>
+      }
+
     </div>
-  }
+
+  </div>
+</div>
+}
 </section>
