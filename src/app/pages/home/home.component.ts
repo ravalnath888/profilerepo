@@ -18,7 +18,7 @@ export class HomeComponent {
     description: `An end-to-end authentication and authorization system 
                   implementing JWT tokens, role-based access control, and 
                   user management dashboards.`,
-    link: 'https://www.authx.com/', // optional GitHub/live link
+    link: 'https://www.authx.com/'
     },
     {
       title: 'Portfolio Website',
@@ -26,4 +26,6 @@ export class HomeComponent {
       link: '#'
     },
   ];
+
+
 }
